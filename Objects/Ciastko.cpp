@@ -5,17 +5,20 @@
 #include "Ciastko.h"
 
 Ciastko::Ciastko() {
-    this->rodzaj = "maślane";
-    cout << "Konstruktor domyślny: " << this->rodzaj << "\n";
+    setRodzaj("maślane");
+    cout << "Konstruktor domyślny: " << getRodzaj() << ", " << getIdentyfikatorCiastka() << ", " << getLicznikCiastek() <<
+                                     ", " << getMójNumer() <<"\n";
 }
 
 Ciastko::Ciastko(const string &rodzaj) : rodzaj(rodzaj) {
-    this->rodzaj = rodzaj;
-    cout << "Konstruktor z parametrem: " << this->rodzaj << "\n";
+    setRodzaj(rodzaj);
+    cout << "Konstruktor z parametrem: " << getRodzaj() << ", " << getIdentyfikatorCiastka() << ", " << getLicznikCiastek() <<
+                                         ", " << getMójNumer() <<"\n";
 }
 
 Ciastko::~Ciastko() {
-    cout << "Destruktor: " << this->rodzaj << "\n";cout << "Konstruktor domyślny: " << this->rodzaj << "\n";
+    cout << "Destruktor: " << getRodzaj() << ", " << getIdentyfikatorCiastka() << ", " << getLicznikCiastek() <<
+                           ", " << getMójNumer() <<"\n";
 }
 
 const string &Ciastko::getRodzaj() const {

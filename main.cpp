@@ -1,6 +1,9 @@
-#include <iostream>
-
+#include "Objects/Ciastko.h"
+#include "list"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    list<Ciastko> lista;
+    lista.begin();
+    lista.assign(1,Ciastko());
+
     return 0;
 }

@@ -12,9 +12,10 @@ using namespace std;
 class Ciastko {
 private:
     string rodzaj;
-    static int licznikCiastek;  //id
-    static int identyfikatorCiastka;    //next objects id
+    int licznikCiastek;  //id
+    int identyfikatorCiastka;    //next objects id
     int mójNumer; //id with prefix
+
 public:
     Ciastko();
 
@@ -26,13 +27,13 @@ public:
 
     void setRodzaj(const string &rodzaj);
 
-    static int getLicznikCiastek();
+    int getLicznikCiastek();
 
-    static void setLicznikCiastek(int licznikCiastek);
+    void setLicznikCiastek(int licznikCiastek);
 
-    static int getIdentyfikatorCiastka();
+    int getIdentyfikatorCiastka();
 
-    static void setIdentyfikatorCiastka(int identyfikatorCiastka);
+    void setIdentyfikatorCiastka(int identyfikatorCiastka);
 
     int getMójNumer() const;
 
